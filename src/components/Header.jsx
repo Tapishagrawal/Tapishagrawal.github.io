@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect } from 'react'
+import React from 'react'
 import { motion } from "framer-motion";
-import SectionDivider from './SectionDivider';
 
 const links = [
     {
@@ -28,7 +27,7 @@ const links = [
 
 export default function Header() {
     return (
-        <header className='z-[999] relative'>
+        <header className='z-[999] relative' id="nav-menu">
             <motion.div className='fixed top-0 left-1/2  h-[3rem] w-full rounded-none border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/5 backdrop-blur-[0.5rem] sm:top-6 sm:w-[36rem] sm:rounded-full'
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
@@ -41,12 +40,16 @@ export default function Header() {
                             initial={{ y: -100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                         >
-                            <a className='flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition' href={link.hash}>{link.name}</a>
+                            <a
+                                className='flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition'
+                                href={link.hash}
+                            >
+                                {link.name}
+                            </a>
                         </motion.li>
                     ))}
                 </ul>
             </nav>
-            <SectionDivider/>
         </header>
     )
 }
