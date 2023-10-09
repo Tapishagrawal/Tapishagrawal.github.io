@@ -4,6 +4,8 @@ import SectionDivider from './components/SectionDivider';
 import About from './Pages/About';
 import Home from './Pages/Home';
 import { BluerBackground } from './components/BluerBackground';
+import { Projects } from './Pages/Projects';
+import { Skills } from './Pages/Skills';
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <Home/>
       <SectionDivider/>
       <About/>
-
+      <Projects/>
+      <Skills/>
     </>
   );
 }
