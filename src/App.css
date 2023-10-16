@@ -2,7 +2,6 @@
 
 body {
   background-color: #f8fafc;
-  font-family: 'Roboto', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -22,4 +21,7 @@ body {
   border-radius: 6px;
   /* Border radius of the scrollbar thumb */
   padding: 5px;
+}
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
