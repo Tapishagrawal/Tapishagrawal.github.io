@@ -25,3 +25,7 @@ body {
 .scroll-smooth{
   scroll-behavior: smooth;
 }
+.scroll-smooth.dark body{
+  background-color: #111827;
+  color: #f9fafb !important;
+}
