@@ -4,7 +4,7 @@ import { Project } from '../components/Project';
 
 export const Projects = () => {
     return (
-        <section id="projects" className='scroll-mt-[6rem]'>
+        <section id="projects" className='scroll-mt-[6rem] mx-2'>
             <SectionHeading>My Projects</SectionHeading>
             <Project />
             <Project />
