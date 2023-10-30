@@ -6,23 +6,28 @@ import clsx from "clsx";
 const links = [
     {
         name: "Home",
-        hash: "#home"
+        hash: "#home",
+        CName: "nav-link home",
     },
     {
         name: "About",
-        hash: "#about"
+        hash: "#about",
+        CName: "nav-link about",
     },
     {
         name: "Projects",
-        hash: "#projects"
+        hash: "#projects",
+        CName: "nav-link projects",
     },
     {
         name: "Skills",
-        hash: "#skills"
+        hash: "#skills",
+        CName: "nav-link skills",
     },
     {
         name: "Contact",
-        hash: "#contact"
+        hash: "#contact",
+        CName: "nav-link contact",
     }
 ]
 
@@ -43,7 +48,7 @@ export default function Header() {
                             animate={{ y: 0, opacity: 1 }}
                         >
                             <a
-                                className={clsx('flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300', { "text-gray-950 dark:text-gray-300": activeSection === link.name })}
+                                className={clsx(`${link.CName} flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300`, { "text-gray-950 dark:text-gray-300": activeSection === link.name })}
                                 href={link.hash}
                                 onClick={() => setActiveSection(link.name)}
                             >

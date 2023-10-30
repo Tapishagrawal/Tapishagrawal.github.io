@@ -1,7 +1,7 @@
 import { useScroll, motion, useTransform } from 'framer-motion'
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 
-export const Project = () => {
+export const Project = ({images, projectName, desc, techStacks}) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -20,21 +20,19 @@ export const Project = () => {
         >
             <div className='bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20 max-w-[42rem] m-auto border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition'>
                 <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[20rem]'>
-                    <h3 className='text-2xl font-semibold'>Platkrafter</h3>
-                    <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellat sint aliquam quibusdam nostrum ea?</p>
+                    <h3 className='text-2xl font-semibold'>{projectName}</h3>
+                    <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70 line-clamp-4'>{desc}</p>
                     <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
-                        <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full '>react</li>
-                        <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full '>JavaScript</li>
-                        <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full '>Html</li>
-                        <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full '>SwiperJs</li>
-                        <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full '>Chankra UI</li>
+                        {techStacks.map(techStack=>(
+                            <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full '>{techStack}</li>
+                        ))}
                     </ul>
                 </div>
-                <img src="http://placehold.co/800x600/png"
-                    className='absolute hidden sm:block top-8 -right-40 w-[25.25rem] rounded-t-lg shadow-2xl transition  
+                <img src={images}
+                    className='absolute hidden sm:block top-8 -right-80 w-[39.50rem] rounded-t-lg shadow-2xl transition  
                     group-even:right-[initial] 
                     group-hover:scale-[1.04] 
-                    group-even:-left-40 
+                    group-even:-left-80 
 
                     group-hover:-translate-x-3 
                     group-hover:translate-y-3 

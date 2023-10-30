@@ -1,15 +1,46 @@
 import React from 'react';
 import { SectionHeading } from '../components/SectionHeading';
 import { Project } from '../components/Project';
+import clothlyPoster from "../images/clothly.png"
+import moneyMinglePoster from "../images/moneyMingle.png"
+import plateCrafterPoster from "../images/plateCrafter.png"
+import tripTrakkerPoster from "../images/tripTrekker.png"
 
+const projects = [
+    { 
+        images: clothlyPoster, 
+        projectName: "Clothly",
+        desc:"Clothly is an online cloth-shopping website offering users a seamless shopping experience.",
+        techStacks:["React", "Redux", "Tailwind CSS", "Framer Motion", "Axios", "JSON Server"]
+    },
+    { 
+        images: moneyMinglePoster, 
+        projectName: "Money Mingle",
+        desc:"facilitates currency conversion with user authentication, an activity dashboard, alerts, payments, credits, and debates.",
+        techStacks:["HTML", "CSS", "JavaScript", "SwiperJs", "JSON Server"]
+    },
+    { 
+        images: plateCrafterPoster, 
+        projectName: "Plate Crafter",
+        desc:"specializes in custom vehicle license plate creation, featuring user authentication, an activity dashboard, cart management, and payment processing",
+        techStacks:["React", "ChakraUI", "SwiperJs", "JSON Server"]
+    },
+    { 
+        images: tripTrakkerPoster, 
+        projectName: "Trip Trekker",
+        desc:"TripTrakker, a travel booking website, enabling users to plan and book their trips with ease and convenience.",
+        techStacks:["HTML", "CSS", "Javascript", "JSON Server", "AOS"]
+    },
+]
 export const Projects = () => {
     return (
         <section id="projects" className='scroll-mt-[6rem] mx-2'>
             <SectionHeading>My Projects</SectionHeading>
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            {
+                projects.map(project =>(
+                    <Project {...project}/>
+                ))
+            }
         </section>
     )
 }
