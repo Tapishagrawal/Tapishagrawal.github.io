@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import resume from "../images/Resume-Tapish.pdf";
 
 const links = [
     {
@@ -57,15 +58,18 @@ export default function Header() {
                                     <motion.span
                                         layoutId='activeSection'
                                         transition={{
-                                            type:"spring",
-                                            stiffness:380,
-                                            damping:50 
+                                            type: "spring",
+                                            stiffness: 380,
+                                            damping: 50
                                         }}
                                         className='bg-gray-100 dark:bg-gray-800 rounded-full absolute inset-0 -z-10'></motion.span>
                                 }
                             </a>
                         </motion.li>
                     ))}
+                    <button id="resume-button-1" className='hidden'>
+                        <a id="resume-link-1" href={resume} className='nav-link resume hidden'></a>
+                    </button>
                 </ul>
             </nav>
         </header>

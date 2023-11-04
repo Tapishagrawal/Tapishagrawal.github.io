@@ -17,7 +17,7 @@ export const Contact = () => {
                 Contact Me
             </SectionHeading>
             <div className='-mt-6'>
-                <p className='text-gray-700 dark:text-gray-100'>Contact me directly at <a className='underline' href="mailto:tapishg4@gmail.com">tapishg4@gmail.com</a> or through this from.</p>
+                <p className='text-gray-700 dark:text-gray-100'>Contact me directly at <a id="contact-email" className='underline' href="mailto:tapishg4@gmail.com">tapishg4@gmail.com</a> or <span id="contact-phone">9755774970</span> or through this from.</p>
                 <form className='mt-10 flex flex-col'>
                     <input type="email" required maxLength={500} placeholder='Your email' className='h-14 rounded-lg border border-black/10 outline-blue-300 dark:text-zinc-700 font-medium dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all px-4' />
                     <textarea maxLength={500} required placeholder='Your message' className='h-52 my-3 rounded-lg border border-black/10 p-4 outline-blue-300 dark:text-zinc-700 font-medium dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all'></textarea>

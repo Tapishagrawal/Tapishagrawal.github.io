@@ -33,7 +33,7 @@ export const Skills = () => {
     
     return (
         <section id="skills"
-            className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 m-auto'
+            className='skills-card mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 m-auto'
         >
             <SectionHeading>My Skills</SectionHeading>
             <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
@@ -47,7 +47,7 @@ export const Skills = () => {
                             viewport={{
                                 once: true,
                             }}
-                            className='bg-white dark:bg-white/10 dark:text-white/80 border border-black/[0.1] rounded-xl px-5 py-3' key={index}>{skill}</motion.li>
+                            className='skills-card-name bg-white dark:bg-white/10 dark:text-white/80 border border-black/[0.1] rounded-xl px-5 py-3' key={index}>{skill}</motion.li>
                     ))
                 }
             </ul>
