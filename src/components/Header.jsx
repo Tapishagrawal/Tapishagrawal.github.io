@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import resume from "../images/Resume-Tapish.pdf";
+import { HiDownload } from 'react-icons/hi';
 
 const links = [
     {
@@ -67,11 +68,11 @@ export default function Header() {
                             </a>
                         </motion.li>
                     ))}
-                    <button id="resume-button-1" className='hidden'>
-                        <a id="resume-link-1" href={resume} className='nav-link resume hidden'></a>
-                    </button>
                 </ul>
             </nav>
+            <button id="resume-button-1" className='fixed right-4 top-6 max-[860px]:hidden focus:scale-105 hover:scale-105 active:scale-100 transition'>
+                <a id="resume-link-2" className='group m-1 text-[#D1D5DB] bg-gray-900 hover:bg-gray-800 px-3 max-[426px]:px-5 max-[376px]:px-3 py-2 rounded-full flex items-center gap-2' href={resume} target="_blank" download>Resume <span className='inline-block opacity-60 group-hover:translate-y-1 transition'><HiDownload /></span></a>
+            </button>
         </header>
     )
 }

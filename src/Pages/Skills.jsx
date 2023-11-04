@@ -47,7 +47,7 @@ export const Skills = () => {
                             viewport={{
                                 once: true,
                             }}
-                            className='skills-card-name bg-white dark:bg-white/10 dark:text-white/80 border border-black/[0.1] rounded-xl px-5 py-3' key={index}>{skill}</motion.li>
+                            className='skills-card bg-white dark:bg-white/10 dark:text-white/80 border border-black/[0.1] rounded-xl px-5 py-3' key={index}>{skill}</motion.li>
                     ))
                 }
             </ul>

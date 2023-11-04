@@ -8,6 +8,8 @@ import { Projects } from './Pages/Projects';
 import { Skills } from './Pages/Skills';
 import { Contact } from './Pages/Contact';
 import { ThemeSwitch } from './components/ThemeSwitch';
+import { GitHubCalendarSec } from './components/GitHubCalendarSec';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Projects />
       <Skills />
       <Contact/>
+      <GitHubCalendarSec/>
       <ThemeSwitch/>
     </>
   );

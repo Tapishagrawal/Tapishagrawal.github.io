@@ -28,7 +28,7 @@ export default function Home() {
                 >
                     <a id="contact-github" className='m-1 bg-gray-900 hover:bg-gray-800 px-10 max-[426px]:px-7 max-[376px]:px-5 py-3 max-[376px]:py-2 rounded-full text-white flex items-center gap-2 focus:scale-105 hover:scale-105 active:scale-100 transition' target='_blank' href="https://github.com/Tapishagrawal">GitHub <FaGithubSquare /></a>
                     <button id="resume-button-2">
-                        <a id="resume-link-2" className='group m-1 bg-white dark:bg-white/10 px-10 max-[426px]:px-7 max-[376px]:px-5 py-3 max-[376px]:py-2 rounded-full flex items-center gap-2 focus:scale-105 hover:scale-105 active:scale-100 transition ' href={resume} target="_blank" download>Resume <span className='inline-block opacity-60 group-hover:translate-y-1 transition'><HiDownload /></span></a>
+                        <a id="resume-link-2" className='group m-1 bg-white dark:bg-white/10 px-10 max-[426px]:px-7 max-[376px]:px-5 py-3 max-[376px]:py-2 rounded-full flex items-center gap-2 focus:scale-105 hover:scale-105 active:scale-100 transition ' href={resume} target="_blank">Resume <span className='inline-block opacity-60 group-hover:translate-y-1 transition'><HiDownload /></span></a>
                     </button>
                     <a id="contact-linkedin" className='m-1 bg-white dark:bg-white/10 px-4 py-3 rounded-full flex items-center gap-2 focus:scale-105 hover:scale-105 active:scale-100 transition' href="https://www.linkedin.com/in/tapish-agrawal/" target="_blank"><FaLinkedin /></a>
                 </motion.div>
