@@ -11,7 +11,7 @@ export const GitHubCalendarSec = () => {
             </div>
             <div className="flex justify-center flex-col items-center gap-8 sm:flex-row">
                 <div id="github-streak-stats" className="flex justify-center items-start">
-                    <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=tapishagrawal&theme=dark&hide_border=true&border_radius=4.8" alt="GitHub Streak" /></a>
+                    <img src="https://github-readme-streak-stats.herokuapp.com?user=tapishagrawal&theme=dark&hide_border=true&border_radius=4.8" alt="GitHub Streak" />
                 </div>
                 <div id="github-stats-card">
                     <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=tokyonight" />
