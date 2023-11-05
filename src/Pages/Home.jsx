@@ -17,7 +17,7 @@ export default function Home() {
                     }}
                 >
                     <h1 id="user-detail-name" className='text-5xl font-bold my-4 text-gray-700 dark:text-gray-50'>Hi, I am <br /> Tapish Agrawal</h1>
-                    <p id="user-detail-intro" className='text-justify leading-7 text-xl font-normal text-gray-700 dark:text-gray-50 mb-4'> an motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things, I know React JavaScript Html Css </p>
+                    <p className='text-justify leading-7 text-xl font-normal text-gray-700 dark:text-gray-50 mb-4'> an motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</p>
                 </motion.div>
                 <motion.div className='my-10 flex'
                     initial={{ opacity: 0, y: 50 }}
