@@ -11,7 +11,7 @@ export const Contact = () => {
             transition={{duration:1}}
             viewport={{once:true}}
             id="contact"
-            className='scroll-mt-[6rem] mb-20 sm:md-28 w-[min(100%,39rem)] m-auto text-center px-3'
+            className=' mt-40 scroll-mt-[6rem] mb-20 sm:md-28 w-[min(100%,39rem)] m-auto text-center px-3'
         >
             <SectionHeading>
                 Contact Me

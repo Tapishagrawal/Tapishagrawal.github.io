@@ -21,8 +21,8 @@ function App() {
       <About />
       <Projects />
       <Skills />
-      <Contact/>
       <GitHubCalendarSec/>
+      <Contact/>
       <ThemeSwitch/>
     </>
   );
