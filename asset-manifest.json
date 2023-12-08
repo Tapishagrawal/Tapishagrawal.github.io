@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.77708b17.css",
-    "main.js": "/static/js/main.79465535.js",
+    "main.css": "/static/css/main.685dc6b6.css",
+    "main.js": "/static/js/main.2c2ca717.js",
     "static/js/787.34c9fc9e.chunk.js": "/static/js/787.34c9fc9e.chunk.js",
-    "static/media/Tapish-Agrawal-Resume.pdf": "/static/media/Tapish-Agrawal-Resume.e7ae9827621cdfe32b55.pdf",
-    "static/media/profilePic.png": "/static/media/profilePic.b2940fa540a1e6df11f8.png",
+    "static/media/profilePic.png": "/static/media/profilePic.078fdc022f6cbaa8d103.png",
+    "static/media/Tapish-Agrawal-Resume.pdf": "/static/media/Tapish-Agrawal-Resume.cc6303e74d1a05119a7c.pdf",
     "static/media/plateCrafter.png": "/static/media/plateCrafter.939887b4cf3934c371f9.png",
     "static/media/tripTrekker.png": "/static/media/tripTrekker.899ab65a137401dc6fe3.png",
     "static/media/moneyMingle.png": "/static/media/moneyMingle.b7946ca542445643573b.png",
     "static/media/clothly.png": "/static/media/clothly.3925af78736413f59da7.png",
     "index.html": "/index.html",
-    "main.77708b17.css.map": "/static/css/main.77708b17.css.map",
-    "main.79465535.js.map": "/static/js/main.79465535.js.map",
+    "main.685dc6b6.css.map": "/static/css/main.685dc6b6.css.map",
+    "main.2c2ca717.js.map": "/static/js/main.2c2ca717.js.map",
     "787.34c9fc9e.chunk.js.map": "/static/js/787.34c9fc9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77708b17.css",
-    "static/js/main.79465535.js"
+    "static/css/main.685dc6b6.css",
+    "static/js/main.2c2ca717.js"
   ]
 }
