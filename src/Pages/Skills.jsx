@@ -17,30 +17,30 @@ const skillsData = [
     "ChakraUI"
 ]
 const fadeInAnimationVariants = {
-    initial:{
-        opacity:0,
-        y:100
+    initial: {
+        opacity: 0,
+        y: 100
     },
-    animate:(index)=>({
-        opacity:1,
-        y:0,
-        transition:{
-            delay:0.05*index
+    animate: (index) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 0.05 * index
         }
     }),
 }
 export const Skills = () => {
-    
+
     return (
         <section id="skills"
-            className='max-w-[53rem] scroll-mt-28 text-center sm:mb-40 m-auto'
+            className='max-w-[53rem] scroll-mt-28 text-center sm:mb-40 m-auto px-3'
         >
             <SectionHeading>My Skills</SectionHeading>
             <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
                 {
                     skillsData.map((skill, index) => (
                         <motion.div
-                            
+
                             variants={fadeInAnimationVariants}
                             initial="initial"
                             whileInView="animate"
