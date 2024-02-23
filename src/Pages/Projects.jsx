@@ -3,10 +3,18 @@ import { SectionHeading } from '../components/SectionHeading';
 import { Project } from '../components/Project';
 import clothlyPoster from "../images/clothly.png"
 import moneyMinglePoster from "../images/moneyMingle.png"
-import plateCrafterPoster from "../images/plateCrafter.png"
-import tripTrakkerPoster from "../images/tripTrekker.png"
+import plateCrafterPoster from "../images/plateCrafter.png" 
+import FitQuestPoster from "../images/fitQuest.png" 
 
 const projects = [
+    { 
+        images: FitQuestPoster, 
+        projectName: "FitQuest",
+        desc:"FitQuest is your ultimate fitness destination where you can engage in exciting fitness activities, tackle daily and weekly challenges to level up your fitness game, and compete on leaderboards to see how you stack up against others.",
+        techStacks:["React", "Redux", "MongoDB", "Express", "Tailwind CSS"],
+        projectLink :"https://fit-quest-gamified-fitness-tracking-webapp.vercel.app/",
+        gitHubLink:"https://github.com/Tapishagrawal/FitQuest---Gamified-Fitness-Tracking-Webapp"
+    },
     { 
         images: clothlyPoster, 
         projectName: "Clothly",
@@ -30,15 +38,7 @@ const projects = [
         techStacks:["React", "ChakraUI", "SwiperJs", "JSON Server"],
         projectLink :"https://futuristic-amount-4935.vercel.app/",
         gitHubLink:"https://github.com/Tapishagrawal/futuristic-amount-4935"
-    },
-    { 
-        images: tripTrakkerPoster, 
-        projectName: "Trip Trekker",
-        desc:"TripTrakker, a travel booking website, enabling users to plan and book their trips with ease and convenience.",
-        techStacks:["HTML", "CSS", "Javascript", "JSON Server", "AOS"],
-        projectLink :"https://knotty-sock-1389.vercel.app/",
-        gitHubLink:"https://github.com/Tapishagrawal/knotty-sock-1389"
-    },
+    }
 ]
 export const Projects = () => {
     return (
